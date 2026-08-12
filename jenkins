@@ -1,27 +1,14 @@
 pipeline { agent any
-
 stages {
-
 stage('Compile') {
-
 steps {
-
 sh 'javac jenkins.java'
-
 }
-
 }
-
 stage('Run') {
-
 steps {
-
 sh 'java Addition'
-
 }
-
 }
-
 }
-
 }
